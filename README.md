@@ -6,7 +6,7 @@ Deployed a static portfolio website on both AWS and Azure to demonstrate core cl
 ## AWS Implementation
 - **Storage:** Amazon S3 for static website hosting
 - **CDN:** CloudFront for global content delivery
-- **URL:** d36bhrlhdnb5fs.cloudfront.net
+- **URL:** https://d36bhrlhdnb5fs.cloudfront.net/
 
 ## Azure Implementation
 - **Storage:** Azure Blob Storage with static website hosting
