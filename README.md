@@ -21,5 +21,5 @@ Deployed a static portfolio website on both AWS and Azure to demonstrate core cl
 - Multi-cloud deployment strategies
 
 ## Cost
-- Both deployments run on free tier
+-  AWS CloudFront runs on free tier, while Azure CDN runs on a paid subscription
 - Estimated monthly cost: $0-2
