@@ -6,7 +6,7 @@ import { ContactView, SkillsView } from './views/SecondaryViews'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Routes>
         <Route element={<WindowShell />}>
           <Route index element={<Navigate to="/home" replace />} />
