@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfcf8;
+  border-left: 2px solid #7c9885;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7c9885;
+  border: 2px solid #fdfcf8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9fa8da;
+}
+
+.blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.scanlines {
+  position: relative;
+}
+
+.scanlines::before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.05) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 50;
+  background-size:
+    100% 4px,
+    3px 100%;
+  pointer-events: none;
+}
+
+::selection {
+  background: #9fa8da;
+  color: #fdfcf8;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.home-grid {
+  background-color: #f7f7f5;
+  background-image:
+    linear-gradient(rgba(47, 62, 51, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 62, 51, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.braille-art {
+  font-family: 'Apple Symbols', 'Segoe UI Symbol', 'Noto Sans Symbols 2', ui-monospace, monospace;
+  font-size: 5px;
+  line-height: 5px;
+  letter-spacing: 0;
+  white-space: pre;
+  transform: scale(0.72);
+  transform-origin: center;
+}
