@@ -1,21 +1,5 @@
 import { profile } from '../data/profile'
-
-function FlowerIcon() {
-  return (
-    <svg
-      viewBox="0 0 40 40"
-      className="h-8 w-8 md:h-10 md:w-10 shrink-0 text-peri"
-      aria-hidden
-    >
-      <circle cx="20" cy="8" r="6" fill="currentColor" />
-      <circle cx="30" cy="14" r="6" fill="currentColor" />
-      <circle cx="28" cy="26" r="6" fill="currentColor" />
-      <circle cx="12" cy="26" r="6" fill="currentColor" />
-      <circle cx="10" cy="14" r="6" fill="currentColor" />
-      <circle cx="20" cy="20" r="5" fill="#FDFCF8" stroke="currentColor" strokeWidth="1.5" />
-    </svg>
-  )
-}
+import tapCat from '../assets/tap-cat.gif'
 
 function highlightText(text: string, highlight: string) {
   const index = text.indexOf(highlight)
@@ -45,7 +29,12 @@ export function HomeView() {
               <h1 className="font-pixel text-4xl md:text-5xl text-sage-dark tracking-wide">
                 HELLO, WORLD
               </h1>
-              <FlowerIcon />
+              <img
+                src={tapCat}
+                alt=""
+                className="h-10 w-10 md:h-12 md:w-12 shrink-0 object-contain image-pixelated"
+                aria-hidden
+              />
             </div>
 
             <div className="space-y-5 font-mono text-sm md:text-base text-sage-text leading-relaxed max-w-2xl">
