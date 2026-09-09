@@ -28,12 +28,3 @@ export const contacts = [
     href: 'https://www.github.com/clarabkwon',
   },
 ]
-
-export const skills = [
-  { name: 'REACT / JS', level: '████████░░ 80%' },
-  { name: 'HTML / CSS', level: '█████████░ 90%' },
-  { name: 'JAVA', level: '███████░░░ 70%' },
-  { name: 'PYTHON', level: '███████░░░ 70%' },
-  { name: 'AWS / AZURE', level: '██████░░░░ 60%' },
-  { name: 'HCI / DESIGN', level: '████████░░ 80%' },
-]

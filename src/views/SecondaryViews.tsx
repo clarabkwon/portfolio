@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { contacts, skills } from '../data/profile'
+import { contacts } from '../data/profile'
 
 interface FileViewProps {
   prompt: string
@@ -28,26 +28,10 @@ function FileView({ prompt, filename, children }: FileViewProps) {
   )
 }
 
-export function SkillsView() {
-  return (
-    <FileView prompt="C:\GARDEN\SKILLS_LOG\>" filename="SKILLS_LOG.DAT">
-      <h2 className="font-pixel text-3xl text-sage-dark mb-4">SKILLS_LOG.DAT</h2>
-      <div className="space-y-3 font-mono text-sm">
-        {skills.map((skill) => (
-          <div key={skill.name} className="flex flex-col sm:flex-row sm:justify-between gap-1">
-            <span className="text-sage-dark font-bold">{skill.name}</span>
-            <span className="text-peri-dark">{skill.level}</span>
-          </div>
-        ))}
-      </div>
-    </FileView>
-  )
-}
-
 export function ContactView() {
   return (
-    <FileView prompt="C:\GARDEN\CONTACT_ROOT\>" filename="CONTACT.CFG">
-      <h2 className="font-pixel text-3xl text-sage-dark mb-4">CONTACT_ROOT/</h2>
+    <FileView prompt="C:\GARDEN\CONTACT\>" filename="CONTACT.CFG">
+      <h2 className="font-pixel text-3xl text-sage-dark mb-4">CONTACT/</h2>
       <p className="text-sm text-sage-text mb-6 leading-relaxed">
         Open to chats about design, code, puzzles, and everything in between c:
       </p>

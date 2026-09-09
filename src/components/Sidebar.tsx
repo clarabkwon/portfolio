@@ -1,22 +1,11 @@
 import { NavLink } from 'react-router-dom'
 import { profile } from '../data/profile'
-
-const PLANT_ASCII = `      .::.
-    .::::::.
-  .::.    .::.
- .::  *  *  ::.
-  .::.    .::.
-    '::::::'
-      '::'
-       ||
-    \\\\ || //
- ^^^^^^^^^^^^^^^^`
+import headshot from '../assets/clara-headshot.jpg'
 
 const NAV_ITEMS = [
   { to: '/home', label: 'HOME.TXT' },
-  { to: '/projects', label: 'PROJECT_SEEDS/' },
-  { to: '/skills', label: 'SKILLS_LOG.DAT' },
-  { to: '/contact', label: 'CONTACT_ROOT/' },
+  { to: '/projects', label: 'PROJECTS/' },
+  { to: '/contact', label: 'CONTACT/' },
 ] as const
 
 export function Sidebar() {
@@ -26,29 +15,13 @@ export function Sidebar() {
         <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-bg-panel px-2 text-sage-dark font-pixel text-lg">
           ID_CARD.DAT
         </div>
-        <pre className="font-pixel text-sage-dark text-left text-sm leading-tight mt-2 mx-auto inline-block">
-          {PLANT_ASCII.split('\n').map((line, i) => {
-            if (line.includes('*')) {
-              const parts = line.split('*')
-              return (
-                <span key={i}>
-                  {parts[0]}
-                  <span className="text-peri">*</span>
-                  {parts[1]}
-                  <span className="text-peri">*</span>
-                  {parts[2]}
-                  {'\n'}
-                </span>
-              )
-            }
-            return (
-              <span key={i}>
-                {line}
-                {'\n'}
-              </span>
-            )
-          })}
-        </pre>
+        <div className="mt-4 mx-auto w-28 h-28 border-2 border-sage overflow-hidden bg-bg-cream">
+          <img
+            src={headshot}
+            alt={`${profile.displayName} profile`}
+            className="w-full h-full object-cover object-[center_20%]"
+          />
+        </div>
         <div className="mt-4 font-pixel text-2xl text-sage-dark">{profile.name}</div>
         <div className="text-xs text-peri-dark">{profile.title}</div>
       </div>

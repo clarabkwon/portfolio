@@ -21,30 +21,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'multi-cloud-portfolio',
+    id: 'theconvo',
     number: '[01]',
-    status: 'MATURE',
-    name: 'MULTI_CLOUD',
+    status: 'SPROUTING',
+    name: 'THE_CONVO',
     description:
-      'Deployed the same static website on both AWS S3 and Azure Blob Storage with CDN.',
-    tags: ['#AWS_S3', '#CLOUDFRONT', '#AZURE', '#CDN'],
+      'An interactive web experience where users plant flowers tied to songs that remind them of a loved one, creating a shared digital memory garden with YouTube-backed song suggestions.',
+    tags: ['#NEXTJS', '#REACT', '#TYPESCRIPT', '#YOUTUBE_API'],
     actionLabel: 'OPEN_REPO.EXE',
-    links: [{ label: 'GitHub', href: 'https://github.com/clarabkwon/portfolio' }],
+    links: [{ label: 'GitHub', href: 'https://github.com/clarabkwon/theconvo' }],
     asciiArt: projectAsciiArts[0],
   },
   {
-    id: 'mockmate',
+    id: 'pokegen',
     number: '[02]',
     status: 'MATURE',
-    name: 'MOCKMATE',
+    name: 'POKEGEN',
     description:
-      'A platform that helps developers prepare for interviews through AI-assisted feedback and voice interaction.',
-    tags: ['#HTML', '#CSS', '#REACT'],
+      'A web app that generates a random Pokémon by fetching its sprite and name across 1000+ IDs via PokéAPI, with an interactive score system and pixel-art UI.',
+    tags: ['#REACT', '#HTML', '#CSS', '#POKEAPI'],
     actionLabel: 'OPEN_REPO.EXE',
-    links: [
-      { label: 'GitHub', href: 'https://github.com/cbrowne9472/MockMateProj' },
-      { label: 'DevPost', href: 'https://devpost.com/software/mockmate-pctbes' },
-    ],
+    links: [{ label: 'GitHub', href: 'https://github.com/clarabkwon/PokeGen' }],
     asciiArt: projectAsciiArts[1],
   },
   {
@@ -65,16 +62,31 @@ export const projects: Project[] = [
     asciiArt: projectAsciiArts[2],
   },
   {
-    id: 'scheduling',
+    id: 'multi-cloud-portfolio',
     number: '[04]',
     status: 'MATURE',
-    name: 'SCHEDULER',
+    name: 'MULTI_CLOUD',
     description:
-      'Booking system that saves, loads, and transforms event data into structured 2D lists, mapping bookings to 15-minute intervals with time, lane, and formatting rules.',
-    tags: ['#PYTHON'],
-    actionLabel: 'INIT_SYS.SYS',
-    links: [],
+      'Deployed the same static website on both AWS S3 and Azure Blob Storage with CDN.',
+    tags: ['#AWS_S3', '#CLOUDFRONT', '#AZURE', '#CDN'],
+    actionLabel: 'OPEN_REPO.EXE',
+    links: [{ label: 'GitHub', href: 'https://github.com/clarabkwon/portfolio' }],
     asciiArt: projectAsciiArts[3],
+  },
+  {
+    id: 'mockmate',
+    number: '[05]',
+    status: 'MATURE',
+    name: 'MOCKMATE',
+    description:
+      'A platform that helps developers prepare for interviews through AI-assisted feedback and voice interaction.',
+    tags: ['#HTML', '#CSS', '#REACT'],
+    actionLabel: 'OPEN_REPO.EXE',
+    links: [
+      { label: 'GitHub', href: 'https://github.com/cbrowne9472/MockMateProj' },
+      { label: 'DevPost', href: 'https://devpost.com/software/mockmate-pctbes' },
+    ],
+    asciiArt: projectAsciiArts[1],
   },
 ]
 

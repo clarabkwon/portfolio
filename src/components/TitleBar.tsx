@@ -2,7 +2,7 @@ interface TitleBarProps {
   path?: string
 }
 
-export function TitleBar({ path = 'C:\\GARDEN\\PROJECT_SEEDS.EXE' }: TitleBarProps) {
+export function TitleBar({ path = 'C:\\GARDEN\\PROJECTS.EXE' }: TitleBarProps) {
   return (
     <div className="bg-sage text-bg-cream font-pixel text-xl md:text-2xl px-4 py-1 flex justify-between items-center border-b-4 border-sage select-none">
       <div className="flex items-center gap-4">

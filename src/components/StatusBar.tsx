@@ -6,7 +6,7 @@ interface StatusBarProps {
 }
 
 export function StatusBar({
-  location = '/ROOT/PROJECT_SEEDS/',
+  location = '/ROOT/PROJECTS/',
   status = 'EXPLORING',
 }: StatusBarProps) {
   const [time, setTime] = useState('00:00:00')

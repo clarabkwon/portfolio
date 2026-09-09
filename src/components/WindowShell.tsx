@@ -11,18 +11,13 @@ const ROUTE_META: Record<string, { exe: string; loc: string; status: string }> =
     status: 'BOOTED',
   },
   '/projects': {
-    exe: 'C:\\GARDEN\\PROJECT_SEEDS.EXE',
-    loc: '/ROOT/PROJECT_SEEDS/',
+    exe: 'C:\\GARDEN\\PROJECTS.EXE',
+    loc: '/ROOT/PROJECTS/',
     status: 'EXPLORING',
   },
-  '/skills': {
-    exe: 'C:\\GARDEN\\SKILLS_LOG.EXE',
-    loc: '/ROOT/SKILLS_LOG/',
-    status: 'SCANNING',
-  },
   '/contact': {
-    exe: 'C:\\GARDEN\\CONTACT_ROOT.EXE',
-    loc: '/ROOT/CONTACT_ROOT/',
+    exe: 'C:\\GARDEN\\CONTACT.EXE',
+    loc: '/ROOT/CONTACT/',
     status: 'LISTENING',
   },
 }
